@@ -1,0 +1,61 @@
+.shorten {
+	background: url(../../images/bg-shorten-mobile.svg) no-repeat, $Dark-Violet;
+	background-position: top right;
+	border-radius: 10px;
+	padding: 1rem;
+	margin-top: -220px;
+	margin-bottom: 1rem;
+	position: relative;
+	z-index: 2rem;
+
+	form {
+		input {
+			width: 100%;
+			padding: 12px 1rem;
+			border-radius: 5px;
+			border: none;
+			margin-bottom: 1rem;
+			color: $Very-Dark-Blue;
+
+			&::placeholder {
+				color: $Grayish-Violet;
+			}
+
+			&:focus {
+				outline: none;
+			}
+
+			@include desktop {
+				width: 75%;
+				margin: 0;
+				padding: 1rem;
+			}
+		}
+
+		.shorten-btn {
+			width: 100%;
+			border-radius: 5px;
+			background: $Cyan;
+			color: $Btn-text-light;
+
+			&:hover {
+				background-color: lighten($Cyan, 30%);
+			}
+
+			@include desktop {
+				width: 20%;
+			}
+		}
+
+		@include desktop {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	@include desktop {
+		background: url(../../images/bg-shorten-desktop.svg) no-repeat center/cover,
+			$Dark-Violet;
+		padding: 3rem;
+	}
+}

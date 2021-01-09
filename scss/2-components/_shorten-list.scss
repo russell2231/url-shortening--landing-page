@@ -1,0 +1,71 @@
+.shorten-list {
+	margin-bottom: 7rem;
+
+	.shorten-item {
+		background-color: #fff;
+		border-radius: 10px;
+		margin-bottom: 1rem;
+		padding: 0.5rem 0;
+
+		.long-link {
+			padding: 0 1rem;
+			border-bottom: 1px solid $Gray;
+			width: 100%;
+
+			.input-link {
+				margin-bottom: 0.5rem;
+				color: $Very-Dark-Blue;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
+
+				@include desktop {
+					margin-bottom: 1rem;
+				}
+			}
+
+			@include desktop {
+				border-bottom: none;
+				width: 50%;
+			}
+		}
+
+		.shortened {
+			display: flex;
+			flex-direction: column;
+			padding: 0 1rem 0.5rem;
+
+			.shortened-link {
+				color: $Cyan;
+			}
+
+			.copy {
+				border-radius: 10px;
+				background-color: $Cyan;
+				color: $Btn-text-light;
+
+				&:hover {
+					background-color: lighten($Cyan, 30%);
+				}
+
+				&.copied {
+					background-color: $Very-Dark-Violet;
+				}
+			}
+
+			@include desktop {
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				width: 45%;
+				padding-bottom: 0;
+			}
+		}
+
+		@include desktop {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+}

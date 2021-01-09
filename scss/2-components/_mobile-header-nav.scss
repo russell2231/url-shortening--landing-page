@@ -1,0 +1,55 @@
+header {
+	.container {
+		position: relative;
+
+		.header-nav.open {
+			background-color: $Dark-Violet;
+			width: 100%;
+			border-radius: 10px;
+			padding: 1rem;
+			z-index: 2;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: absolute;
+			top: 5rem;
+
+			ul {
+				padding: 1rem 0;
+				list-style-type: none;
+				text-align: center;
+				border-bottom: 1px solid $Grayish-Violet;
+				width: 100%;
+
+				li {
+					margin-bottom: 1.5rem;
+
+					a {
+						color: #fff;
+						text-decoration: none;
+					}
+				}
+			}
+
+			.entry {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+
+				.btn {
+					width: 100%;
+					margin-bottom: 0.5rem;
+					color: $Btn-text-light;
+				}
+
+				.login {
+					background: transparent;
+				}
+
+				.signup {
+					background: $Cyan;
+				}
+			}
+		}
+	}
+}

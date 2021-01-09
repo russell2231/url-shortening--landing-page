@@ -1,0 +1,22 @@
+.boost {
+	background: url(../../images/bg-boost-mobile.svg) no-repeat, $Dark-Violet;
+	background-position: right;
+	padding: 4.5rem 0;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		h2 {
+			color: #fff;
+		}
+	}
+
+	@include desktop {
+		background: url(../../images/bg-boost-desktop.svg) no-repeat center/cover,
+			$Dark-Violet;
+		padding: 4rem;
+	}
+}
